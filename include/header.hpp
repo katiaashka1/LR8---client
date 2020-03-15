@@ -73,7 +73,7 @@ struct talk_to_svr
             do_ask_clients();
     }
     void on_clients(const std::string & msg){
-        std::string clients = msg.substr(8)
+        std::string clients = msg.substr(8);
         std::cout << username_ << ", new client list:" << clients << std::endl;
     }
     void do_ask_clients(){

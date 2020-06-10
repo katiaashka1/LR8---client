@@ -85,7 +85,7 @@ struct talk_to_svr
 
 private:
     ip::tcp::socket sock_;
-    enum { max_msg = 102 };
+    enum { max_msg = 1024 };
     int already_read_;
     char buff_[max_msg];
     bool started_;

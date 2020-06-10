@@ -85,7 +85,7 @@ struct talk_to_svr
 
 private:
     ip::tcp::socket sock_;
-    enum { max_msg = 1024 };
+    enum { max_msg = 102 };
     int already_read_;
     char buff_[max_msg];
     bool started_;
@@ -109,3 +109,4 @@ int main(){
     run_client("dima");
     return 0;
 }
+
